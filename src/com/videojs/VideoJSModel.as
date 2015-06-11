@@ -351,6 +351,19 @@ package com.videojs{
             return 0;
         }
 
+         /**
+         * Returns the total number of dropped frames.
+         * @return
+         *
+         */
+        public function get droppedFrames():int{
+            if(_provider){
+                return _provider.droppedFrames;
+            }
+            return 0;
+        }
+
+
         /**
          * Returns the total number of bytes loaded for the current video.
          * @return

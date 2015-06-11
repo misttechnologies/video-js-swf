@@ -294,6 +294,9 @@ package{
                 case "rtmpStream":
                     return _app.model.rtmpStream;
                     break;
+                case "droppedFrames": 
+                    return _app.model.droppedFrames;
+                    break;
             }
             return null;
         }

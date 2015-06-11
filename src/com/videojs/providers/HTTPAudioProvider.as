@@ -146,6 +146,10 @@ package com.videojs.providers{
             return _audioBytesTotal;
         }
 
+        public function get droppedFrames():int{
+            return 0;
+        }
+
         public function get playing():Boolean{
             return _audioPlaybackStarted;
         }

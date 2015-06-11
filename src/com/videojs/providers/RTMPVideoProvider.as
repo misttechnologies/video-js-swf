@@ -177,6 +177,10 @@ package com.videojs.providers{
             
             return 0;
         }
+
+        public function get droppedFrames():int{
+            return _ns.info.droppedFrames;
+        }
         
         public function get playing():Boolean{
             return _isPlaying;

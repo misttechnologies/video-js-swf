@@ -88,6 +88,12 @@ package com.videojs.providers{
          * unknown or unable to be determined (due to streaming, bitrate switching, etc)
          */
         function get bytesTotal():int;
+
+        /**
+         * Should return the total number of dropped frames, or 0 if this value is
+         * unknown or unable to be determined
+         */
+        function get droppedFrames():int;
         
         /**
          * Should return a boolean value that indicates whether or not the current media
